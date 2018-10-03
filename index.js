@@ -9,10 +9,33 @@ function nowServing(katzDeliLine){
     const firstInLine = katzDeliLine[0];
     katzDeliLine.shift();
     return `Currently serving ${firstInLine}.`;
-  } else{
-    return `There is nobody waiting to be served!`;
-  }
+  } 
+  
+  return `There is nobody waiting to be served!`;
+  
 }
+
+
+
+let count = 0;
+
+function takeANumber(arr){
+  count++;
+  arr.push(count);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function currentLine(arr){
   const newArr = ["The line is currently:"];
